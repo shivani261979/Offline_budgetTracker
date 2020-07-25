@@ -1,20 +1,21 @@
 body {
   font-size: 100%;
   font-family: Arial;
-  background-image: url(/assets/budget\ -\ iStock_000041295790_Large.jpg);
+  /* background-image: url('../assets/budget\ -\ iStock_000041295790_Large.jpg'); */
   background-size: cover;
+  background-color: snow;
   background-repeat: no-repeat;
 }
 
 button, input {
   font-size: 100%;
   font-family: Arial;
-  border-color: blue;
+  border-color: rgb(0, 153, 255);
 }
 
 h1 {
   text-align: center;
-  text-decoration-color: blue;
+  text-decoration-color: rgb(0, 153, 255);
 }
 
 table {
@@ -22,9 +23,9 @@ table {
 }
 
 td, th {
-  border: 1px solid blue;
+  border: 2px solid  rgb(0, 153, 255);
   text-align: left;
-  padding: 8px;
+  padding: 10px;
 }
 
 tr:nth-child(even) {
@@ -44,11 +45,11 @@ tr:nth-child(even) {
 .total {
   font-size: 130%;
   text-decoration: underline;
-  text-shadow: blue;
+  text-shadow:  rgb(0, 153, 255);
 }
 
 .form {
-  margin-top: 25px;
+  margin-top: 35px;
   width: 100%;
 }
 

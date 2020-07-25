@@ -13,6 +13,16 @@
 
 
   <title>Your Personal Budget Tracker</title>
+
+  <style>
+  body {
+  font-size: 100%;
+  font-family: Arial;
+  /* background-image: url(/assets/budget - iStock_000041295790_Large.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  </style>
 </head>
 
 <body>
@@ -24,12 +34,15 @@
       <div class="total">Your total is = $<span id="total">0</span></div>
     </div>
 
-    <div class="form">
+    <!-- <div class="form"> -->
+      <div style="float:left class=form">
+      <form>
       <input type="text" id="t-name" placeholder="Name of transaction" />
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
       <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
       <button id="sub-btn"><i class="fa fa-minus"></i> Remove Funds</button>
       <p class="error"></p>
+      </form>
     </div>
 
     <div class="transactions">
@@ -49,11 +62,13 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="index.js"></script>
+
+  <!-- Code for offline work -->
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
         navigator.serviceWorker.register("service-worker.js").then(reg => {
-          console.log("We found your service worker file!", reg);
+          console.log("We've found your offline file", reg);
         });
       });
     }
